@@ -1,0 +1,13 @@
+apiVersion: v1
+data:
+  host: 15.194.59.110
+  port: '1521'
+  service_name: DRGMGR10
+kind: ConfigMap
+metadata:
+  creationTimestamp: '2022-05-20T12:18:21Z'
+  name: db-conf
+  namespace: dev
+  resourceVersion: '114969'
+  selfLink: /api/v1/namespaces/test-users-s2i/configmaps/db-conf
+  uid: f0b411d3-d836-11ec-b10a-080027bbedfe

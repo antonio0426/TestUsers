@@ -67,7 +67,7 @@ minishift start --vm-driver virtualbox
 minishift oc-env
 @FOR /f "tokens=*" %i IN ('minishift oc-env') DO @call %i
 oc login -u developer -p developer
-oc new-project test-users-s2i
+oc new-project dev
 oc import-image --confirm openjdk/openjdk-11-rhel7 --from=registry.access.redhat.com/openjdk/openjdk-11-rhel7
 oc new-app openjdk-11-rhel7 https://github.com/antonio0426/TestUsers --name=test-users-s2i-app (nome immagine test-users-s2i-app)
 
@@ -75,7 +75,10 @@ oc new-app openjdk-11-rhel7 https://github.com/antonio0426/TestUsers --name=test
 #Per aggiornare il progetto
 oc start-build test-users-s2i-app 
 
-
+#Descrizione
+L'immagine openjdk/openjdk-11-rhel7 viene utilizzata per la build, The container image contains S2I integration scripts 
+for deployment on Red Hat OpenShift.
+Quindi è limmagine stessa che permette il s2i
 
 
 
