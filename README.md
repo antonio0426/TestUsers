@@ -78,7 +78,10 @@ oc start-build test-users-s2i-app
 #Descrizione
 L'immagine openjdk/openjdk-11-rhel7 viene utilizzata per la build, The container image contains S2I integration scripts 
 for deployment on Red Hat OpenShift.
-Quindi è limmagine stessa che permette il s2i
+Quindi è limmagine stessa che permette il s2i 
+dai log infatti ho:
+Using registry.access.redhat.com/openjdk/openjdk-11-rhel7@sha256:a55ede0c4b60edc130e7ecc54d34b695a8807c8b23dc85a3ef100964da1f65aa 
+as the s2i builder image
 
 
 
