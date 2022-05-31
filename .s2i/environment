@@ -4,5 +4,5 @@ JAVA_OPTIONS=-Dquarkus.http.host=0.0.0.0
 JAVA_APP_JAR=/deployments/quarkus-run.jar
 AB_JOLOKIA_AUTH_OPENSHIFT=true
 MAVEN_ARGS=-Dquarkus.kubernetes.deploy=true
-MAVEN_CLEAR_REPO=false
+MAVEN_CLEAR_REPO=true
 AB_JOLOKIA_USER=test-users-s2i
