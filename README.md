@@ -68,6 +68,8 @@ minishift oc-env
 @FOR /f "tokens=*" %i IN ('minishift oc-env') DO @call %i
 oc login -u developer -p developer
 oc new-project dev
+oc policy add-role-to-user admin system:serviceaccount:dev:default
+
 oc import-image --confirm openjdk/openjdk-11-rhel7 --from=registry.access.redhat.com/openjdk/openjdk-11-rhel7
 oc new-app openjdk-11-rhel7 https://github.com/antonio0426/TestUsers --name=test-users-s2i-app (nome immagine test-users-s2i-app)
 
