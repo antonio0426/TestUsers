@@ -25,7 +25,7 @@ public class RunFlyway {
 
 	public void runFlywayMigration(@Observes StartupEvent event) {
 		if (runMigration) {
-			Flyway flyway = Flyway.configure().baselineDescription(baselineVersion)
+			Flyway flyway = Flyway.configure().baselineVersion(baselineVersion)
 					.dataSource("jdbc:" + datasourceUrl, datasourceUsername, datasourcePassword).load();
 			flyway.migrate();
 		}
