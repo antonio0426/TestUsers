@@ -1,13 +1,12 @@
 package com.flyway;
 
 import javax.enterprise.context.ApplicationScoped;
-import javax.enterprise.event.Observes;
+ 
 import javax.inject.Inject;
-
+ 
 import org.jboss.logging.Logger;
 
-import io.quarkus.arc.Priority;
-import io.quarkus.runtime.StartupEvent;
+ 
 
 @ApplicationScoped
 public class StartUpTest {
@@ -15,9 +14,8 @@ public class StartUpTest {
 	@Inject
 	Logger log;
 
-	public void startUpTest(@Observes @Priority(2) StartupEvent event) {
-		
-		log.info("############################startUpTest############################");
-	}
+	public void runTest() {
+		log.info("############################runTest############################");
 
+	}
 }

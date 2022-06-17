@@ -1,0 +1,1 @@
+update DRG_USER set TEST = 'Test2';

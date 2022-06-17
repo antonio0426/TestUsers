@@ -9,13 +9,13 @@ import org.jboss.logging.Logger;
  
 
 @ApplicationScoped
-public class StartUpTest2 {
+public class StartUpTest3 {
 
 	@Inject
 	Logger log;
 
 	public void runTest() {
-		log.info("############################runTest2############################");
+		log.info("############################runTest3############################");
 
 	}
 }
