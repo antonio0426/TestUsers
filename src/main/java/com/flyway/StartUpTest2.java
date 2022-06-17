@@ -10,14 +10,14 @@ import io.quarkus.arc.Priority;
 import io.quarkus.runtime.StartupEvent;
 
 @ApplicationScoped
-public class StartUpTest {
+public class StartUpTest2 {
 
 	@Inject
 	Logger log;
 
-	public void startUpTest(@Observes @Priority(2) StartupEvent event) {
+	public void startUpTest(@Observes @Priority(3) StartupEvent event) {
 		
-		log.info("############################startUpTest############################");
+		log.info("############################startUpTest2############################");
 	}
 
 }
