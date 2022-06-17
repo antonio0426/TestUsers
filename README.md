@@ -69,7 +69,7 @@ minishift oc-env
 oc login -u developer -p developer
 oc new-project dev
 
---Assegno i permessi admin all'utente default per il progetto dev
+--Assegno i permessi admin all'utente default per il progetto dev, in questo modo creo un RoleBinding con ServiceAccount default e permessi admin
 oc policy add-role-to-user admin system:serviceaccount:dev:default
 
 oc import-image --confirm openjdk/openjdk-11-rhel7 --from=registry.access.redhat.com/openjdk/openjdk-11-rhel7
