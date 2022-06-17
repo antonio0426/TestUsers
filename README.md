@@ -79,6 +79,9 @@ oc import-image --confirm openjdk-11:latest --from=registry.access.redhat.com/ub
 oc new-app openjdk-11 https://github.com/antonio0426/TestUsers --name=test-users-s2i-app 
 
 
+oc new-app openjdk-11-rhel7 https://github.com/antonio0426/TestUsersDB --name=test-users-db-s2i-app
+oc new-app openjdk-11 https://github.com/antonio0426/TestUsersDB --name=test-users-db-s2i-app 
+
 login: docker
 pass: tcuser
 

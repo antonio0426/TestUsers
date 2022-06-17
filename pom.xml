@@ -73,6 +73,14 @@
 			<groupId>io.quarkus</groupId>
 			<artifactId>quarkus-kubernetes-client</artifactId>
 		</dependency>
+		<dependency>
+			<groupId>io.quarkus</groupId>
+			<artifactId>quarkus-flyway</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>io.quarkus</groupId>
+			<artifactId>quarkus-jdbc-oracle</artifactId>
+		</dependency>
 	</dependencies>
 	<build>
 		<plugins>
