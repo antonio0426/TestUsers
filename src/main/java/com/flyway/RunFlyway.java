@@ -20,12 +20,10 @@ public class RunFlyway {
 	String datasourceUsername;
 	@ConfigProperty(name = "quarkus.datasource.password")
 	String datasourcePassword;
-	@ConfigProperty(name = "quarkus.flyway.baseline-version")
-	String baselineVersion;
-
+	
 	public void runFlywayMigration(@Observes StartupEvent event) {
 		if (runMigration) {
-			Flyway flyway = Flyway.configure().baselineVersion(baselineVersion)
+			Flyway flyway = Flyway.configure().
 					.dataSource("jdbc:" + datasourceUrl, datasourceUsername, datasourcePassword).load();
 			flyway.migrate();
 		}
