@@ -56,10 +56,10 @@
       <groupId>io.quarkus</groupId>
       <artifactId>quarkus-kubernetes-config</artifactId>
     </dependency>
-    <dependency>
+    <!--dependency>
       <groupId>io.quarkus</groupId>
-      <artifactId>quarkus-container-image-s2i</artifactId>
-    </dependency>
+      <artifactId>quarkus-container-image-!</artifactId>
+    </dependency-->
     <dependency>
       <groupId>io.quarkus</groupId>
       <artifactId>quarkus-junit5</artifactId>
@@ -82,10 +82,10 @@
       <groupId>io.quarkus</groupId>
       <artifactId>quarkus-flyway</artifactId>
     </dependency>
-    <!--dependency>
+    <dependency>
       <groupId>io.quarkus</groupId>
       <artifactId>quarkus-jdbc-oracle</artifactId>
-    </dependency-->
+    </!dependency>
   </dependencies>
   <build>
     <plugins>
