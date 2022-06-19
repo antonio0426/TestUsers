@@ -19,11 +19,21 @@ public class TestResource {
 	@Inject
 	private TestService testService;
 
+//	@GET
+//	@Path("/users")
+//	public Uni<List<DrgUser>> getAllUsers() {
+//		log.info("Start Chiamo la get");
+//		Uni<List<DrgUser>> l = testService.getAllUsers();
+//		log.info("End Chiamo la get");
+//		return l;
+//	}
+	
+	
 	@GET
 	@Path("/users")
-	public Uni<List<DrgUser>> getAllUsers() {
+	public List<DrgUser> getAllUsers() {
 		log.info("Start Chiamo la get");
-		Uni<List<DrgUser>> l = testService.getAllUsers();
+		List<DrgUser> l = testService.getAllUsers();
 		log.info("End Chiamo la get");
 		return l;
 	}
