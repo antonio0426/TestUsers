@@ -27,7 +27,10 @@
 		</dependencies>
 	</dependencyManagement>
 	<dependencies>
-	 
+		<dependency>
+			<groupId>io.quarkus</groupId>
+			<artifactId>quarkus-resteasy-jackson</artifactId>
+		</dependency>
 		<dependency>
 			<groupId>io.quarkus</groupId>
 			<artifactId>quarkus-hibernate-orm-panache</artifactId>
@@ -44,7 +47,10 @@
 			<groupId>io.quarkus</groupId>
 			<artifactId>quarkus-openshift</artifactId>
 		</dependency>
-	 
+		<dependency>
+			<groupId>io.quarkus</groupId>
+			<artifactId>quarkus-kubernetes</artifactId>
+		</dependency>
 		<dependency>
 			<groupId>io.quarkus</groupId>
 			<artifactId>quarkus-kubernetes-config</artifactId>
