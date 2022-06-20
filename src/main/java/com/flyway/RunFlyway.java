@@ -20,7 +20,7 @@ public class RunFlyway {
 	@ConfigProperty(name = "myapp.flyway.migrate")
 	boolean runMigration;
 
-	@ConfigProperty(name = "quarkus.datasource.reactive.url")
+	@ConfigProperty(name = "quarkus.datasource.jdbc.url")
 	String datasourceUrl;
 	@ConfigProperty(name = "quarkus.datasource.username")
 	String datasourceUsername;
