@@ -10,7 +10,7 @@ import io.smallrye.mutiny.Uni;
 public class TestService {
 
 	
-	public List<DrgUser> getAllUsers() {
+	public Uni<List<DrgUser>> getAllUsers() {
 		
 		return DrgUser.listAll();
 	}

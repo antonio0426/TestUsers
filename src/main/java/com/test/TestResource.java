@@ -2,10 +2,10 @@ package com.test;
 
 import java.util.List;
 
-
 import javax.inject.Inject;
 import javax.ws.rs.GET;
 import javax.ws.rs.Path;
+
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -19,21 +19,11 @@ public class TestResource {
 	@Inject
 	private TestService testService;
 
-//	@GET
-//	@Path("/users")
-//	public Uni<List<DrgUser>> getAllUsers() {
-//		log.info("Start Chiamo la get");
-//		Uni<List<DrgUser>> l = testService.getAllUsers();
-//		log.info("End Chiamo la get");
-//		return l;
-//	}
-	
-	
 	@GET
 	@Path("/users")
-	public List<DrgUser> getAllUsers() {
+	public Uni<List<DrgUser>> getAllUsers() {
 		log.info("Start Chiamo la get");
-		List<DrgUser> l = testService.getAllUsers();
+		Uni<List<DrgUser>> l = testService.getAllUsers();
 		log.info("End Chiamo la get");
 		return l;
 	}
