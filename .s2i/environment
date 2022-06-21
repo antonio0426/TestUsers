@@ -1,1 +1,1 @@
-MAVEN_ARGS=-Dquarkus.kubernetes.deploy
+MAVEN_ARGS=-Dquarkus.kubernetes.deploy=true
